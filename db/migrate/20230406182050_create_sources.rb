@@ -1,7 +1,7 @@
 class CreateSources < ActiveRecord::Migration[7.0]
   def change
     create_table :sources do |t|
-      t.string :link
+      t.belongs_to :article, null: false, foreign_key: true
 
       t.timestamps
     end

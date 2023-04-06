@@ -1,8 +1,7 @@
 class CreateTrendings < ActiveRecord::Migration[7.0]
   def change
     create_table :trendings do |t|
-      t.string :belongs_to
-      t.string :article
+      t.belongs_to :article, null: false, foreign_key: true
 
       t.timestamps
     end
