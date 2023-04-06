@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trendings
   resources :users
   resources :sources
   resources :articles
