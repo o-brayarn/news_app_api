@@ -42,6 +42,9 @@ users = User.create!([
     }
     ])
 
+#     User.create!(name: "Cool Joe", email: "coolj@gmail.com", password: "cooljoe", password_confirmation: "cooljoe", ph
+# one_number: "1234444491", role: "contributer")
+
 # Article.destroy_all
 # articles = Article.create!([
 #     {
